@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Marcação de Consulta</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Formulário de Marcação de Consulta</h2>
+        {{#erro}}
+        <div class="alert alert-danger">{{erro}}</div>
+        {{/erro}}
+        <form method="post" action="/marcar-consulta">
+            <!-- Seção de Dados Pessoais -->
+            <h3>Dados Pessoais</h3>
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" class="form-control" id="cpf" name="cpf" required>
+            </div>
+            <div class="form-group">
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" class="form-control" id="dataNascimento" name="dataNascimento" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" class="form-control" id="endereco" name="endereco" required>
+            </div>
+            <div class="form-group">
+                <label for="uf">UF:</label>
+                <input type="text" class="form-control" id="uf" name="uf" required>
+            </div>
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" class="form-control" id="cep" name="cep" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" required>
+            </div>
+
+            <!-- Seção de Dados da Consulta -->
+            <h3>Dados da Consulta</h3>
+            <div class="form-group">
+                <label for="especialidade">Especialidade Médica:</label>
+                <select class="form-control" id="especialidade" name="especialidade" required>
+                    <option value="Cardiologia">Cardiologia</option>
+                    <option value="Dermatologia">Dermatologia</option>
+                    <!-- Adicione outras opções de especialidade aqui -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dataHora">Data e Hora:</label>
+                <input type="datetime-local" class="form-control" id="dataHora" name="dataHora" required>
+            </div>
+            <div class="form-group">
+                <label for="medicamentosAlergicos">Medicamentos Alérgicos:</label>
+                <select class="form-control" id="medicamentosAlergicos name="medicamentosAlergicos[]">
+                    <option value="Cardiologia">Antibióticos</option>
+                    <option value="Dermatologia">Anti-inflamatórios</option>
+                    <!-- Adicione outras opções de especialidade aqui -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="informacoesAdicionais">Informações Adicionais:</label>
+                <textarea class="form-control" id="informacoesAdicionais" name="informacoesAdicionais" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Marcar Consulta</button>
+        </form>
+    </div>
+</body>
+</html>
