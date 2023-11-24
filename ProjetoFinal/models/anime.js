@@ -1,13 +1,11 @@
-// models/anime.js
-
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = require('../db/sequelize'); // Certifique-se de importar corretamente a instância do Sequelize
+const sequelize = require('../db/sequelize'); 
 
 const Anime = sequelize.define('Anime', {
-  name: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
 });
 
 module.exports = Anime;

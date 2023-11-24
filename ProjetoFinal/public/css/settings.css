@@ -26,11 +26,11 @@ body {
     border: none;
     background: none;
     cursor: pointer;
-    transition: background-color 0.3s; /* Adiciona uma transição suave ao hover */
+    transition: background-color 0.3s; 
 }
 
 .navbar-btn:hover {
-    background-color: rgba(175, 42, 86, 0.795); /* Cor de fundo ao passar o mouse */
+    background-color: rgba(175, 42, 86, 0.795);
     text-decoration: none;
 }
 

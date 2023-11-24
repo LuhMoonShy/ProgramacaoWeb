@@ -1,8 +1,7 @@
-// auth.js
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const { promisify } = require('util');
-const User = require('../models/userModel');
+const User = require('../models/user');
 
 const signToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET, {

@@ -1,42 +1,37 @@
-<!-- views/home.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Página Principal</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="/css/home.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sua Página Principal</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-    <!-- Adicione a barra de navegação no início do corpo do HTML -->
-    <div class="navbar">
-        <a href="/settings" class="navbar-btn"><i class="fas fa-cog"></i></a>
-        <a href="/" class="navbar-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
-    </div>
+<div class="navbar">
+    <a href="/settings" class="navbar-btn"><i class="fas fa-cog"></i></a>
+    <a href="/" class="navbar-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+</div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="anime-container" id="to-watch-container">
-                    <h3>Animes para Assistir</h3>
-                    <button id="to-watch-container-btn" class="add-anime-btn">Adicionar Anime</button>
-                    <!-- Container para os animes a serem assistidos -->
-                </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="anime-container" id="to-watch-container">
+                <h3>Animes para Assistir</h3>
+                <button id="to-watch-container-btn" class="add-anime-btn">Adicionar Anime</button>
             </div>
-            <div class="col-md-6">
-                <div class="anime-container" id="watched-container">
-                    <h3>Animes Assistidos</h3>
-                    <button id="watched-container-btn" class="add-anime-btn">Adicionar Anime</button>
-                    <!-- Container para os animes já assistidos -->
-                </div>
+        </div>
+        <div class="col-md-6">
+            <div class="anime-container" id="watched-container">
+                <h3>Animes Assistidos</h3>
+                <button id="watched-container-btn" class="add-anime-btn">Adicionar Anime</button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Adicione seus scripts JavaScript aqui -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-    <script src="/js/home.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<script src="/js/home.js"></script>
 </body>
 </html>
