@@ -1,1 +1,0 @@
-console.log("K I T T Y  K I T T Y, everybody say HELLO KITTY!")

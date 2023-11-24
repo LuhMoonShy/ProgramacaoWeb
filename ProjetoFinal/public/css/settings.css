@@ -1,0 +1,98 @@
+body {
+    background-image: url(../img/sakuras.avif);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; 
+    display: flex;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #d8216d38;
+    backdrop-filter: blur(4px);
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-btn {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adiciona uma transição suave ao hover */
+}
+
+.navbar-btn:hover {
+    background-color: rgba(175, 42, 86, 0.795); /* Cor de fundo ao passar o mouse */
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff52;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 100px;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-form label {
+    margin-bottom: 8px;
+}
+
+.settings-form input {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.settings-form button {
+    background-color: rgb(146, 0, 73);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.settings-form button:hover {
+    background-color: #ff63b1;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: #bd2130;
+}
+
+h2 {
+    color: rgb(146, 0, 73);
+    text-align: center;
+}
